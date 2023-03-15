@@ -1,34 +1,62 @@
- body {
+/* Just setting the main body of the page to a column to stack the different sections.
+Set the height to 100 to take up the entire page + removing the default formatting */
+body {
     display: flex;
      flex-direction: column;
      min-height: 100vh;
      margin: 0px;
 
 }
- li {
+ li, ul {
+     display: flex;
      list-style-type: none;
      text-decoration: none;
+     padding: 0;
+     margin: 0;
  }
  a {
      text-decoration: none;
      color: #e5e7eb;
      font-size: 14px;
  }
+ /* All of the formatting for the first section will go below here. This is the first, dark blue section with
+ the image placeholder. */
 .header {
+    padding: 10px;
     display: flex;
+    align-items: center;
+    flex-direction: column;
     background-color: #1f2937;
     flex-grow: 2;
+    flex-basis: 0;
+
 
 }
 .header-nav {
     display: flex;
 
-    justify-content: center;
-
+}
+.header-text-headline {
+    font-size: 48px;
+    font-weight: 800;
+    color: #f9faf8;
+}
+.header-text-body {
+    font-size: 18px;
+    color: #e5e7eb;
 }
 .header-logo {
+    display: flex;
+    justify-content: flex-start;
     color: #f9faf8;
     font-size: 24px;
+
+}
+.header-links {
+    display: flex;
+    align-items: flex-end;
+    flex: 1;
+
 }
 .header-links ul {
     display: flex;
@@ -38,8 +66,10 @@
 }
 .header-content {
     display: flex;
+    justify-content: center;
     align-items: center;
     margin: 16px;
+    gap: 48px;
 
 }
 .header-text-content {
@@ -48,6 +78,14 @@
     align-content: center;
     justify-content: center;
     width: 300px;
+}
+.placeholder-image {
+    display: flex;
+    width: 400px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
 }
 .card-section {
     background-color: #fdfdfd;
@@ -63,8 +101,12 @@
 
 }
 .footer {
-    flex-grow: 1;
+    display: flex;
     background-color: #1f2937;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    color: #e5e7eb;
 
 
 }
