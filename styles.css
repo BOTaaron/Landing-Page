@@ -1,0 +1,27 @@
+.body {
+    display: flex;
+    flex: 1;
+
+}
+.header {
+    background-color: #1f2937;
+
+
+}
+.card-container {
+    background-color: #fdfdfd;
+    height: 200px;
+}
+.quote-container {
+    height: 200px;
+    background-color: #e5e7eb;
+}
+.cta-container {
+    height: 150px;
+}
+.footer {
+    height: 75px;
+    background-color: #1f2937;
+
+
+}
