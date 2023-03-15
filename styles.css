@@ -1,26 +1,25 @@
 .body {
     display: flex;
-    flex: 1;
-
+    flex-direction: row;
 }
 .header {
     background-color: #1f2937;
 
 
 }
-.card-container {
+.card-section {
     background-color: #fdfdfd;
-    height: 200px;
+
 }
-.quote-container {
-    height: 200px;
+.quote-section {
+
     background-color: #e5e7eb;
 }
-.cta-container {
-    height: 150px;
+.cta-section {
+
 }
 .footer {
-    height: 75px;
+
     background-color: #1f2937;
 
 
