@@ -7,13 +7,18 @@ body {
      margin: 0px;
 
 }
- li, ul {
+ li {
      display: flex;
      list-style-type: none;
-     text-decoration: none;
      padding: 0;
      margin: 0;
  }
+ ul {
+     display: flex;
+     gap: 10px;
+ }
+
+
  a {
      text-decoration: none;
      color: #e5e7eb;
@@ -24,7 +29,6 @@ body {
 .header {
     padding: 10px;
     display: flex;
-    align-items: center;
     flex-direction: column;
     background-color: #1f2937;
     flex-grow: 2;
@@ -32,9 +36,9 @@ body {
 
 
 }
-.header-nav {
+.navbar {
     display: flex;
-
+    justify-content: space-around;
 }
 .header-text-headline {
     font-size: 48px;
@@ -44,26 +48,24 @@ body {
 .header-text-body {
     font-size: 18px;
     color: #e5e7eb;
+
 }
 .header-logo {
     display: flex;
-    justify-content: flex-start;
+    align-items: flex-start;
     color: #f9faf8;
     font-size: 24px;
 
 }
+
 .header-links {
     display: flex;
-    align-items: flex-end;
-    flex: 1;
-
-}
-.header-links ul {
-    display: flex;
-    gap: 8px;
+    align-content: flex-start;
     justify-content: flex-end;
 
-}
+
+ }
+
 .header-content {
     display: flex;
     justify-content: center;
@@ -77,16 +79,38 @@ body {
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    width: 300px;
+    max-width: 500px;
+
+
+}
+.header-text-content button {
+    width: 100px;
+    background-color: #3882f6;
+    color: #f9faf8;
+    border: none;
+    border-radius: 8px;
+    padding: 5px;
+    cursor: pointer;
+
 }
 .placeholder-image {
     display: flex;
-    width: 400px;
-    height: 150px;
-    justify-content: center;
-    align-items: center;
+
+    padding: 50px;
     background-color: gray;
+    color: #f9faf8;
+
+
 }
+.placeholder-image-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+/* This is for the second section with the blue outlined boxes. They are arranged as a column stacked
+above some text */
 .card-section {
     background-color: #fdfdfd;
     flex-grow: 2;
@@ -107,6 +131,13 @@ body {
     align-items: center;
     justify-content: center;
     color: #e5e7eb;
-
-
+}
+.quote-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.signature {
+    font-weight: bold;
+    justify-content: flex-end;
 }
