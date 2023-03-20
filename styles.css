@@ -1,47 +1,44 @@
 /* Just setting the main body of the page to a column to stack the different sections.
 Set the height to 100 to take up the entire page + removing the default formatting */
-body {
+body, html {
     display: flex;
      flex-direction: column;
-     min-height: 100vh;
+     height: 100%;
      margin: 0px;
-
 }
  li {
      display: flex;
      list-style-type: none;
-     padding: 0;
-     margin: 0;
  }
  ul {
      display: flex;
      gap: 10px;
+     padding: 0;
+     margin: 0;
  }
-
-
  a {
      text-decoration: none;
      color: #e5e7eb;
      font-size: 14px;
  }
  /* All of the formatting for the first section will go below here. This is the first, dark blue section with
- the image placeholder. */
+ the image. */
 .header {
     padding: 10px;
     display: flex;
     flex-direction: column;
     background-color: #1f2937;
     flex-grow: 2;
-    flex-basis: 0;
-}
-.navbar {
-    display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
 
 }
 .header-body {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 80%;
+    margin: 50px;
+
 }
 .header-text-headline {
     font-size: 48px;
@@ -51,39 +48,31 @@ body {
 .header-text-body {
     font-size: 18px;
     color: #e5e7eb;
-
+}
+.navbar {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
 }
 .header-logo {
-    display: flex;
-    justify-content: flex-start;
     color: #f9faf8;
     font-size: 24px;
-
 }
-
 .header-links {
     display: flex;
     justify-content: flex-end;
-
-
  }
-
-.header-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 16px;
-    gap: 48px;
-
-}
 .header-text-content {
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    max-width: 500px;
+    max-width: 40%;
 
-
+}
+.zagan-palace {
+    max-height: 200px;
+    border-radius: 10px;
 }
 .header-text-content button {
     width: 100px;
@@ -95,22 +84,19 @@ body {
     cursor: pointer;
 
 }
-.placeholder-image {
-    display: flex;
-
-    padding: 50px;
-    background-color: gray;
-    color: #f9faf8;
 
 
-}
-.placeholder-image-column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 
 
-}
+
+
+
+
+
+
+
+
+
 /* This is for the second section with the blue outlined boxes. They are arranged as a column stacked
 above some text */
 .card-section {
