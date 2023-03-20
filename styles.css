@@ -28,9 +28,8 @@ body, html {
     display: flex;
     flex-direction: column;
     background-color: #1f2937;
-    flex-grow: 2;
     align-items: center;
-    justify-content: center;
+
 
 }
 .header-body {
