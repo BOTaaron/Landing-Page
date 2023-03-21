@@ -6,6 +6,10 @@ body, html {
      minimum-height: 100%;
      margin: 0;
 }
+button {
+    padding: 0;
+    margin: 0;
+}
 p {
     padding: 0;
     margin: 0;
@@ -123,6 +127,9 @@ with italic text */
 .quote-section {
     flex-grow: 2;
     background-color: #e5e7eb;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .quote-container {
     margin: 75px;
@@ -136,10 +143,42 @@ with italic text */
 }
 .signature {
     display: flex;
-    justify-self: flex-end;
+    justify-content: flex-end;
+    font-weight: bold;
 }
+/* This section is the call to action near the bottom, containing some text
+and a sign-up button with a white border */
 .cta-section {
-    flex-grow: 1.5;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.cta {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3882f6;
+    border-radius: 10px;
+    padding: 24px;
+    width: 50%;
+    margin: 24px;
+}
+.cta-headline-text {
+    font-weight: bold;
+    color: #f9faf8;
+}
+.cta-secondary-text {
+    color: #f9faf8;
+    font-size: 14px;
+}
+.cta-button > button {
+    width: 100px;
+    background-color: #3882f6;
+    color: #f9faf8;
+    border: #f9faf8 solid 1px;
+    border-radius: 8px;
+    padding: 5px;
+    cursor: pointer;
 
 }
 .footer {
@@ -149,13 +188,5 @@ with italic text */
     align-items: center;
     justify-content: center;
     color: #e5e7eb;
-}
-.quote-section {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.signature {
-    font-weight: bold;
-    justify-content: flex-end;
+    padding: 24px;
 }
