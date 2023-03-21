@@ -6,6 +6,10 @@ body, html {
      minimum-height: 100%;
      margin: 0;
 }
+p {
+    padding: 0;
+    margin: 0;
+}
  li {
      display: flex;
      list-style-type: none;
@@ -99,7 +103,6 @@ above some text */
     font-weight: 800;
     font-size: 36px;
     margin: 24px;
-
 }
 .card-container {
     display: flex;
@@ -114,15 +117,26 @@ above some text */
     margin: 24px;
     text-align: center;
 }
-.card-text {
-
-}
 
 /* This is the third section with the quote that is centered
 with italic text */
 .quote-section {
     flex-grow: 2;
     background-color: #e5e7eb;
+}
+.quote-container {
+    margin: 75px;
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+}
+.quote {
+    font-weight: 300;
+    font-style: italic;
+}
+.signature {
+    display: flex;
+    justify-self: flex-end;
 }
 .cta-section {
     flex-grow: 1.5;
