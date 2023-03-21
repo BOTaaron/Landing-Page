@@ -3,8 +3,8 @@ Set the height to 100 to take up the entire page + removing the default formatti
 body, html {
     display: flex;
      flex-direction: column;
-     height: 100%;
-     margin: 0px;
+     minimum-height: 100%;
+     margin: 0;
 }
  li {
      display: flex;
@@ -87,26 +87,37 @@ body, html {
     opacity: 50%;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* This is for the second section with the blue outlined boxes. They are arranged as a column stacked
 above some text */
 .card-section {
     background-color: #fdfdfd;
-    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.information-header {
+    font-weight: 800;
+    font-size: 36px;
+    margin: 24px;
 
 }
+.card-container {
+    display: flex;
+    flex: 1;
+
+
+}
+.card-image {
+    width: 150px;
+    height: 150px;
+}
+.card {
+    width: 150px;
+    margin: 24px;
+}
+
+/* This is the third section with the quote that is centered
+with italic text */
 .quote-section {
     flex-grow: 2;
     background-color: #e5e7eb;
