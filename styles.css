@@ -103,17 +103,19 @@ above some text */
 }
 .card-container {
     display: flex;
-    flex: 1;
-
-
 }
 .card-image {
     width: 150px;
     height: 150px;
+    border-radius: 12px;
 }
 .card {
     width: 150px;
     margin: 24px;
+    text-align: center;
+}
+.card-text {
+
 }
 
 /* This is the third section with the quote that is centered
